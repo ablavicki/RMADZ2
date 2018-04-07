@@ -1,3 +1,40 @@
 <resources>
     <string name="app_name">RMADZ2</string>
+    <string name="tab_text_1">Length</string>
+    <string name="tab_text_2">Temperature</string>
+    <string name="tab_text_3">Speed</string>
+    <string name="tab_text_4">Weight</string>
+    <string name="action_settings">Tab?</string>
+    <string-array name="length_units">
+        <item>Milimeter</item>
+        <item>Centimeter</item>
+        <item>Meter</item>
+        <item>Kilometer</item>
+        <item>Inch</item>
+        <item>Feet</item>
+        <item>Yard</item>
+        <item>Mile</item>
+    </string-array>
+    <string-array name="temperature_units">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+    <string-array name="speed_units">
+        <item>Centimeter/second</item>
+        <item>Meter/second</item>
+        <item>Kilometer/hour</item>
+        <item>Feet/second</item>
+        <item>Mile/hour</item>
+        <item>Knot</item>
+    </string-array>
+    <string-array name="weight_units">
+        <item>Miligram</item>
+        <item>Gram</item>
+        <item>Kilogram</item>
+        <item>Tonne</item>
+        <item>Ounce</item>
+        <item>Pound</item>
+        <item>Stone</item>
+    </string-array>
 </resources>
