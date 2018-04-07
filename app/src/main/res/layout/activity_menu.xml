@@ -1,18 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout
     android:layout_height="match_parent"
-    tools:context=".MenuActivity">
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:gravity="center">
+
+<LinearLayout
+    android:id="@+id/llLength"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:gravity="center_horizontal"
+    >
+    <ImageButton
+        android:id="@+id/ibLength"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/length"
+        android:scaleType="fitXY">
+    </ImageButton>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tvLength"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Length"
+        android:layout_gravity="center_vertical"
+        android:textSize="30dp"/>
+</LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/llSpeed"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        >
+        <ImageButton
+            android:id="@+id/ibSpeed"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/car"
+            android:scaleType="fitXY">
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/tvSpeed"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Speed"
+            android:layout_gravity="center_vertical"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTemperature"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        >
+        <ImageButton
+            android:id="@+id/ibTemperature"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/temperature"
+            android:scaleType="fitXY"
+            >
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/tvTemperature"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Temperature"
+            android:layout_gravity="center_vertical"
+            android:textSize="30dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llWeight"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        >
+        <ImageButton
+            android:id="@+id/ibWeight"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/balance"
+            android:scaleType="fitXY">
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/Weight"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:layout_gravity="center_vertical"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
