@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -120,40 +121,44 @@ public class MainActivity extends AppCompatActivity {
 
             int convertFrom = sFrom.getSelectedItemPosition();
             int convertTo = sTo.getSelectedItemPosition();
-            double valueInput = Double.parseDouble(etValue.getText().toString());
-            double valueResult;
-            int position = mViewPager.getCurrentItem();
-            switch(position){
-                case 0: //length
-                    valueResult = Conversions.convertLength(convertFrom, convertTo, valueInput);
-                    startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
-                    break;
-
-                case 1: //speed
-                    valueResult = Conversions.convertSpeed(convertFrom, convertTo, valueInput);
-                    startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
-                    break;
-
-                case 2: //temperature
-                    if(convertFrom == 0) {
-                        valueResult = Conversions.fromCelsius(convertTo, valueInput);
+            String str = etValue.getText().toString();
+            if (str.matches(""))
+                Toast.makeText(getActivity().getBaseContext(), "Please enter a number", Toast.LENGTH_LONG).show();
+            else {
+                double valueInput = Double.parseDouble(str);
+                double valueResult;
+                int position = mViewPager.getCurrentItem();
+                switch (position) {
+                    case 0: //length
+                        valueResult = Conversions.convertLength(convertFrom, convertTo, valueInput);
                         startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
-                    }
-                    else if(convertFrom == 1) {
-                        valueResult = Conversions.fromFahrenheit(convertTo, valueInput);
-                        startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
-                    }
-                    else {
-                        valueResult = Conversions.fromKelvin(convertTo, valueInput);
-                        startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
-                    }
-                    break;
+                        break;
 
-                case 3: //weight
-                    valueResult = Conversions.convertWeight(convertFrom, convertTo, valueInput);
-                    startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
-                    break;
+                    case 1: //speed
+                        valueResult = Conversions.convertSpeed(convertFrom, convertTo, valueInput);
+                        startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
+                        break;
+
+                    case 2: //temperature
+                        if (convertFrom == 0) {
+                            valueResult = Conversions.fromCelsius(convertTo, valueInput);
+                            startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
+                        } else if (convertFrom == 1) {
+                            valueResult = Conversions.fromFahrenheit(convertTo, valueInput);
+                            startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
+                        } else {
+                            valueResult = Conversions.fromKelvin(convertTo, valueInput);
+                            startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
+                        }
+                        break;
+
+                    case 3: //weight
+                        valueResult = Conversions.convertWeight(convertFrom, convertTo, valueInput);
+                        startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
+                        break;
+                }
             }
+
         }
 
         public void startResultActivity (int convertFrom, int convertTo, double valueInput, double valueResult, int fragmentPosition){
