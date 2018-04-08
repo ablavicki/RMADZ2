@@ -1,7 +1,6 @@
 # RMA - DZ 2
 
 ## UniCon 
-<img src="" title="unicon_logo" height=50 width=50>
 
 **Aplikacija za konverziju mjernih jedinica.**
 
@@ -29,6 +28,7 @@ annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
 ### Screenshots
 
+<p align="middle">
 <img src="screenshots/menu.png" title="Menu" height=250>
 
 <img src="screenshots/main.png" title="Main" height=250>
@@ -38,6 +38,8 @@ annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 <img src="screenshots/spinner2.png" title="Spinner to" height=250>
 
 <img src="screenshots/result.png" title="Result" height=250>
+
+</p>
 
 ### Specifični dijelovi koda
 
