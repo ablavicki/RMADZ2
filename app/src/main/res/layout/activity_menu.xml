@@ -15,15 +15,16 @@
     android:orientation="horizontal"
     android:layout_margin="5dp"
     android:gravity="center_horizontal"
+    android:clickable="true"
     >
-    <ImageButton
+    <ImageView
         android:id="@+id/ibLength"
         android:layout_width="110dp"
         android:layout_height="110dp"
         android:layout_marginRight="10dp"
         android:src="@drawable/length"
         android:scaleType="fitXY">
-    </ImageButton>
+    </ImageView>
 
     <TextView
         android:id="@+id/tvLength"
@@ -41,15 +42,16 @@
         android:orientation="horizontal"
         android:layout_margin="5dp"
         android:gravity="center_horizontal"
+        android:clickable="true"
         >
-        <ImageButton
+        <ImageView
             android:id="@+id/ibSpeed"
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_marginRight="10dp"
             android:src="@drawable/car"
             android:scaleType="fitXY">
-        </ImageButton>
+        </ImageView>
 
         <TextView
             android:id="@+id/tvSpeed"
@@ -67,8 +69,9 @@
         android:orientation="horizontal"
         android:layout_margin="5dp"
         android:gravity="center_horizontal"
+        android:clickable="true"
         >
-        <ImageButton
+        <ImageView
             android:id="@+id/ibTemperature"
             android:layout_width="110dp"
             android:layout_height="110dp"
@@ -76,7 +79,7 @@
             android:src="@drawable/temperature"
             android:scaleType="fitXY"
             >
-        </ImageButton>
+        </ImageView>
 
         <TextView
             android:id="@+id/tvTemperature"
@@ -95,15 +98,16 @@
         android:orientation="horizontal"
         android:layout_margin="5dp"
         android:gravity="center_horizontal"
+        android:clickable="true"
         >
-        <ImageButton
+        <ImageView
             android:id="@+id/ibWeight"
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_marginRight="10dp"
             android:src="@drawable/balance"
             android:scaleType="fitXY">
-        </ImageButton>
+        </ImageView>
 
         <TextView
             android:id="@+id/Weight"

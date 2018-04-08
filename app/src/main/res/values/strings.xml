@@ -6,35 +6,35 @@
     <string name="tab_text_4">Weight</string>
     <string name="action_settings">Tab?</string>
     <string-array name="length_units">
-        <item>Milimeter</item>
-        <item>Centimeter</item>
-        <item>Meter</item>
-        <item>Kilometer</item>
-        <item>Inch</item>
-        <item>Feet</item>
-        <item>Yard</item>
-        <item>Mile</item>
+        <item>[mm] milimeter</item>
+        <item>[cm] centimeter</item>
+        <item>[m] meter</item>
+        <item>[km] kilometer</item>
+        <item>[in] inch</item>
+        <item>[ft] feet</item>
+        <item>[yd] yard</item>
+        <item>[mi] mile</item>
     </string-array>
     <string-array name="temperature_units">
-        <item>Celsius</item>
-        <item>Fahrenheit</item>
-        <item>Kelvin</item>
+        <item>[C] Celsius</item>
+        <item>[F] Fahrenheit</item>
+        <item>[K] Kelvin</item>
     </string-array>
     <string-array name="speed_units">
-        <item>Centimeter/second</item>
-        <item>Meter/second</item>
-        <item>Kilometer/hour</item>
-        <item>Feet/second</item>
-        <item>Mile/hour</item>
-        <item>Knot</item>
+        <item>[cm/s] centimeter/second</item>
+        <item>[m/s] meter/second</item>
+        <item>[km/h] kilometer/hour</item>
+        <item>[ft/s] feet/second</item>
+        <item>[mi/h] mile/hour</item>
+        <item>[kn] knot</item>
     </string-array>
     <string-array name="weight_units">
-        <item>Miligram</item>
-        <item>Gram</item>
-        <item>Kilogram</item>
-        <item>Tonne</item>
-        <item>Ounce</item>
-        <item>Pound</item>
-        <item>Stone</item>
+        <item>[mg] miligram</item>
+        <item>[g] gram</item>
+        <item>[kg] kilogram</item>
+        <item>[t] tonne</item>
+        <item>[oz] ounce</item>
+        <item>[lb] pound</item>
+        <item>[st] stone</item>
     </string-array>
 </resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tvRFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converted from: "
+        android:textSize="@dimen/tv_text_size"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvValueInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRFrom"
+        android:textSize="@dimen/value_text_size"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        />
+
+    <TextView
+        android:id="@+id/tvRTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvValueInput"
+        android:text="Converted to:"
+        android:textSize="@dimen/tv_text_size"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvValueResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRTo"
+        android:textSize="@dimen/value_text_size"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        />
+
+</RelativeLayout>

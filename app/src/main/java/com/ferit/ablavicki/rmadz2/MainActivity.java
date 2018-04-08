@@ -20,7 +20,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
-    private ViewPager mViewPager;
+    private static ViewPager mViewPager;
     static int value;
 
 
@@ -124,37 +124,56 @@ public class MainActivity extends AppCompatActivity {
             int convertTo = sTo.getSelectedItemPosition();
             double valueInput = Double.parseDouble(etValue.getText().toString());
             double valueResult;
-            switch(value){
+            int position = mViewPager.getCurrentItem();
+            switch(position){
                 case 0: //length
                     valueResult = Conversions.convertLength(convertFrom, convertTo, valueInput);
                     etResult.setText(Double.toString(valueResult));
+                    startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
                     break;
 
                 case 1: //speed
                     valueResult = Conversions.convertSpeed(convertFrom, convertTo, valueInput);
                     etResult.setText(Double.toString(valueResult));
+                    startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
                     break;
 
                 case 2: //temperature
                     if(convertFrom == 0) {
                         valueResult = Conversions.fromCelsius(convertTo, valueInput);
                         etResult.setText(Double.toString(valueResult));
+                        startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
                     }
                     else if(convertFrom == 1) {
                         valueResult = Conversions.fromFahrenheit(convertTo, valueInput);
                         etResult.setText(Double.toString(valueResult));
+                        startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
                     }
                     else {
                         valueResult = Conversions.fromKelvin(convertTo, valueInput);
                         etResult.setText(Double.toString(valueResult));
+                        startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
                     }
                     break;
 
                 case 3: //weight
                     valueResult = Conversions.convertWeight(convertFrom, convertTo, valueInput);
                     etResult.setText(Double.toString(valueResult));
+                    startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
                     break;
             }
+        }
+
+        public void startResultActivity (int convertFrom, int convertTo, double valueInput, double valueResult, int fragmentPosition){
+            Intent intent = new Intent(getActivity().getBaseContext(), ResultActivity.class);
+            intent.putExtra("fragmentPosition", fragmentPosition);
+            intent.putExtra("convertFrom", convertFrom);
+            intent.putExtra("convertTo", convertTo);
+            intent.putExtra("valueInput", valueInput);
+            intent.putExtra("valueResult", valueResult);
+
+            startActivity(intent);
+
         }
     }
 

@@ -16,16 +16,16 @@ import butterknife.OnClick;
 public class MenuActivity extends AppCompatActivity {
 
     @BindView(R.id.llLength)
-    LinearLayout bLength;
+    LinearLayout llLength;
 
     @BindView(R.id.llTemperature)
-    LinearLayout bTemperature;
+    LinearLayout llTemperature;
 
     @BindView(R.id.llSpeed)
-    LinearLayout bSpeed;
+    LinearLayout llSpeed;
 
     @BindView(R.id.llWeight)
-    LinearLayout bWeight;
+    LinearLayout llWeight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,8 +54,6 @@ public class MenuActivity extends AppCompatActivity {
         intent.putExtra("value", 2);
         startActivity(intent);
     }
-
-
 
     @OnClick(R.id.llWeight)
     public void clickWeight(View view){
