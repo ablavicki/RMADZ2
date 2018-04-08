@@ -7,4 +7,9 @@
     <dimen name="btnim_padding">20dp</dimen>
     <dimen name="tv_text_size">25sp</dimen>
     <dimen name="value_text_size">20sp</dimen>
+    <dimen name="image_size">110dp</dimen>
+    <dimen name="tv_menu_size">180dp</dimen>
+    <dimen name="menu_layout_margin">5dp</dimen>
+    <dimen name="text_size_menu">30sp</dimen>
+    <dimen name="menu_image_right_margin">10dp</dimen>
 </resources>

@@ -8,7 +8,7 @@
         android:id="@+id/tvRFrom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Converted from: "
+        android:text="@string/tv_result_from"
         android:textSize="@dimen/tv_text_size"
         android:layout_margin="@dimen/activity_horizontal_margin"
         android:textStyle="bold"
@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvValueInput"
-        android:text="Converted to:"
+        android:text="@string/tv_result_to"
         android:textSize="@dimen/tv_text_size"
         android:layout_margin="@dimen/activity_horizontal_margin"
         android:textStyle="bold"/>

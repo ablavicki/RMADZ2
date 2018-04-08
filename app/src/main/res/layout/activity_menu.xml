@@ -3,9 +3,8 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:layout_margin="5dp"
+    android:layout_margin="@dimen/menu_layout_margin"
     android:gravity="center">
 
 <LinearLayout
@@ -13,26 +12,26 @@
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
     android:orientation="horizontal"
-    android:layout_margin="5dp"
+    android:layout_margin="@dimen/menu_layout_margin"
     android:gravity="center_horizontal"
     android:clickable="true"
     >
     <ImageView
         android:id="@+id/ibLength"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_marginRight="10dp"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:layout_marginRight="@dimen/menu_image_right_margin"
         android:src="@drawable/length"
         android:scaleType="fitXY">
     </ImageView>
 
     <TextView
         android:id="@+id/tvLength"
-        android:layout_width="180dp"
+        android:layout_width="@dimen/tv_menu_size"
         android:layout_height="wrap_content"
-        android:text="Length"
+        android:text="@string/tv_length_menu"
         android:layout_gravity="center_vertical"
-        android:textSize="30dp"/>
+        android:textSize="@dimen/text_size_menu"/>
 </LinearLayout>
 
     <LinearLayout
@@ -40,26 +39,26 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:layout_margin="5dp"
+        android:layout_margin="@dimen/menu_layout_margin"
         android:gravity="center_horizontal"
         android:clickable="true"
         >
         <ImageView
             android:id="@+id/ibSpeed"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_marginRight="10dp"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:layout_marginRight="@dimen/menu_image_right_margin"
             android:src="@drawable/car"
             android:scaleType="fitXY">
         </ImageView>
 
         <TextView
             android:id="@+id/tvSpeed"
-            android:layout_width="180dp"
+            android:layout_width="@dimen/tv_menu_size"
             android:layout_height="wrap_content"
-            android:text="Speed"
+            android:text="@string/tv_speed_menu"
             android:layout_gravity="center_vertical"
-            android:textSize="30dp"/>
+            android:textSize="@dimen/text_size_menu"/>
     </LinearLayout>
 
     <LinearLayout
@@ -67,15 +66,15 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:layout_margin="5dp"
+        android:layout_margin="@dimen/menu_layout_margin"
         android:gravity="center_horizontal"
         android:clickable="true"
         >
         <ImageView
             android:id="@+id/ibTemperature"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_marginRight="10dp"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:layout_marginRight="@dimen/menu_image_right_margin"
             android:src="@drawable/temperature"
             android:scaleType="fitXY"
             >
@@ -83,11 +82,11 @@
 
         <TextView
             android:id="@+id/tvTemperature"
-            android:layout_width="180dp"
+            android:layout_width="@dimen/tv_menu_size"
             android:layout_height="wrap_content"
-            android:text="Temperature"
+            android:text="@string/tv_temperature_menu"
             android:layout_gravity="center_vertical"
-            android:textSize="30dp"
+            android:textSize="@dimen/text_size_menu"
             />
     </LinearLayout>
 
@@ -96,26 +95,26 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:layout_margin="5dp"
+        android:layout_margin="@dimen/menu_layout_margin"
         android:gravity="center_horizontal"
         android:clickable="true"
         >
         <ImageView
             android:id="@+id/ibWeight"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_marginRight="10dp"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:layout_marginRight="@dimen/menu_image_right_margin"
             android:src="@drawable/balance"
             android:scaleType="fitXY">
         </ImageView>
 
         <TextView
             android:id="@+id/Weight"
-            android:layout_width="180dp"
+            android:layout_width="@dimen/tv_menu_size"
             android:layout_height="wrap_content"
-            android:text="Weight"
+            android:text="@string/tv_weight_menu"
             android:layout_gravity="center_vertical"
-            android:textSize="30dp"/>
+            android:textSize="@dimen/text_size_menu"/>
     </LinearLayout>
 
 

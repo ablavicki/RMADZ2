@@ -5,6 +5,16 @@
     <string name="tab_text_3">Speed</string>
     <string name="tab_text_4">Weight</string>
     <string name="action_settings">Tab?</string>
+    <string name="tv_result_from">Converted from:</string>
+    <string name="tv_result_to">Converted to:</string>
+    <string name="tv_weight_menu">Weight</string>
+    <string name="tv_temperature_menu">Temperature</string>
+    <string name="tv_speed_menu">Speed</string>
+    <string name="tv_length_menu">Length</string>
+    <string name="btn_result">Result</string>
+    <string name="convert_to">Convert to:</string>
+    <string name="enter_value">Enter value:</string>
+    <string name="convert_from">Convert from:</string>
     <string-array name="length_units">
         <item>[mm] milimeter</item>
         <item>[cm] centimeter</item>

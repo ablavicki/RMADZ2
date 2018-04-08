@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
         private static final String ARG_SECTION_NUMBER = "section_number";
 
         EditText etValue;
-        EditText etResult;
         Button bResult;
         Spinner sFrom;
         Spinner sTo;
@@ -80,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-            etResult = rootView.findViewById(R.id.etResult);
             etValue = rootView.findViewById(R.id.etValue);
             bResult = rootView.findViewById(R.id.bResult);
 
@@ -128,37 +126,31 @@ public class MainActivity extends AppCompatActivity {
             switch(position){
                 case 0: //length
                     valueResult = Conversions.convertLength(convertFrom, convertTo, valueInput);
-                    etResult.setText(Double.toString(valueResult));
                     startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
                     break;
 
                 case 1: //speed
                     valueResult = Conversions.convertSpeed(convertFrom, convertTo, valueInput);
-                    etResult.setText(Double.toString(valueResult));
                     startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
                     break;
 
                 case 2: //temperature
                     if(convertFrom == 0) {
                         valueResult = Conversions.fromCelsius(convertTo, valueInput);
-                        etResult.setText(Double.toString(valueResult));
                         startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
                     }
                     else if(convertFrom == 1) {
                         valueResult = Conversions.fromFahrenheit(convertTo, valueInput);
-                        etResult.setText(Double.toString(valueResult));
                         startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
                     }
                     else {
                         valueResult = Conversions.fromKelvin(convertTo, valueInput);
-                        etResult.setText(Double.toString(valueResult));
                         startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
                     }
                     break;
 
                 case 3: //weight
                     valueResult = Conversions.convertWeight(convertFrom, convertTo, valueInput);
-                    etResult.setText(Double.toString(valueResult));
                     startResultActivity(convertFrom, convertTo, valueInput, valueResult, position);
                     break;
             }
